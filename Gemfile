@@ -36,7 +36,7 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 
 gem 'cloudinary'
-gem 'devise' 
+gem 'bcrypt', '~> 3.1.7'
 gem 'jwt' 
 
 group :development, :test do
