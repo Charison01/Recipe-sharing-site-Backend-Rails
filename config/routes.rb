@@ -7,7 +7,4 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-
-  post 'user_token' => 'user_token#create'
-  resources :users, only: [:create]
 end
