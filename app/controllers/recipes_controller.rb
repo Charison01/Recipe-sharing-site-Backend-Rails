@@ -9,6 +9,16 @@ class RecipesController < ApplicationController
         end
     end
 
+    def update
+        recipe = Recipe.find(params[:id])
+    
+        if recipe.update(recipe_params)
+          render json: { recipe: recipe }, status: :ok
+        else
+          render json: { errors: recipe.errors.full_messages }, status: :unprocessable_entity
+        end
+    end
+
     private
     
     def recipe_params
