@@ -8,5 +8,4 @@ Method: POST
 URL: http://api-url/recipes 
 
 ## Recipe fetch
-Method: GET
-URL: http://api-url/recipes 
+Method: Fetch
