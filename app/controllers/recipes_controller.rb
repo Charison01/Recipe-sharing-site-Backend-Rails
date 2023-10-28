@@ -9,6 +9,11 @@ class RecipesController < ApplicationController
         end
     end
 
+    def index
+        recipes = Recipe.all
+        render json: { recipes: recipes }, status: :ok
+    end
+
     private
     
     def recipe_params
